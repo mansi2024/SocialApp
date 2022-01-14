@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Nunito Sans', sans-serif;
+   /*font-family: 'Poppins', sans-serif;*/
+}
+.title{
+    top:50%;
+    left:50%;
+    margin-top:200px;
+    margin-left: 130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+   
+}
+.card{
+    display: grid;
+    background-color:white;
+    box-shadow: 0 10px 20px rgb(116, 110, 110);
+    grid-template-rows: max-content 300px;
+    border-radius: 15px;
+    z-index: 2;
+}
+.card img{
+    margin-left:55px;
+    margin-top: 50px;
+    width:80%;
+    object-fit:contain;
+    border-radius: 10px;
+}
+.card h1{
+    margin-top: 30px;
+    background-color:rgb(247, 231, 231) ;
+    color:#1d3557;
+    text-align: center;
+    line-height:50px;
+    font-weight: bolder;
+    font-size:30px;
+    font-family: 'Yeseva One', cursive;
+}
+.inner{
+    margin-top:10px;
+    margin-bottom:30px;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: space-between;
+}
+.g-signin2{
+    width:50px;
+    height:50px;
+    z-index: 2;
+}
+
+.google .facebook{
+    font-size:20px;
+}
+.landing video{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height: 100%;
+   z-index: 1;
+   object-fit: cover;
+   
+}
+.intro{
+    background:black;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    background:rgba(253, 248, 248, 0.623);
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 2;
+    transform: translateY(100%);
+}
+.intro-text{
+    color:rgb(216, 223, 230);
+    font-family:'Poppins', sans-serif;
+    font-size:3rem;
+    
+}
+
+.hide{
+    background: black;
+    overflow:hidden;
+}
+.hide span{
+    transform:translateY(100%);
+    display:inline-block;
+}
+
