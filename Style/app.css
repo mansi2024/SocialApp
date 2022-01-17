@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*...Slider...
+............*/
+.intro{
+    background:black;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    background:rgba(253, 248, 248, 0.623);
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 2;
+    transform: translateY(100%);
+}
+.intro-text{
+    color:rgb(255, 255, 255);
+    font-family:'Poppins', sans-serif;
+    font-size:3rem;
+    
+}
+
+.hide{
+    background: black;
+    overflow:hidden;
+}
+.hide span{
+    transform:translateY(100%);
+    display:inline-block;
+}
+
+main{
+    font-family: 'Nunito Sans', sans-serif;
+   
+}
+/* Card1 ..........
+........*/
+
+.title{
+    top:50%;
+    left:50%;
+    margin-top:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+   
+}
+.card{
+    display:grid;
+    background:linear-gradient(rgb(104, 104, 240) ,rgb(243, 85, 85), rgb(71, 224, 71));
+    box-shadow: 0 10px 20px rgb(116, 110, 110);
+    grid-template-rows: max-content 300px;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.card img{
+   
+    width:100%;
+    object-fit:contain;
+    border-radius: 10px;
+}
+.card h1{
+    margin-top: 30px;
+    background-color:rgb(102, 103, 168);
+    color:white;
+    text-align: center;
+    letter-spacing:1px;
+    
+    line-height:50px;
+    font-size:30px;
+    font-family:'Poppins', sans-serif; 
+}
+.inner{
+    margin-top:10px;
+    margin-bottom:30px;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+.google .facebook{
+    font-size:20px;
+}
+.landing video{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height: 100%;
+   z-index: 1;
+   object-fit: cover;
+   
+}
+/*......Card2 ...
+...........*/
+.detail{
+    display:none;
+}
+
+.card2{
+    display:grid;
+    background:linear-gradient(rgb(14, 18, 241) , rgb(235, 231, 11));
+    box-shadow: 0 10px 20px rgb(116, 110, 110);
+    grid-template-columns: max-content 500px;
+    grid-template-rows: max-content 700px;
+    grid-template-columns: repeat(4, fr);
+    gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+      ". a a ."
+      ". a a .";
+    align-content: center;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 2; 
+}
+
+.inner1{
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#image{
+    image-resolution: 500px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 5px solid white;
+}
+#email{
+  text-align: center;
+  font-size: 35px;
+  border-radius: 5px;
+  background:linear-gradient(to right,rgb(61, 56, 56),rgb(129, 120, 120));
+  color:white;
+}
+#name{
+    font-size:35px;
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(61, 56, 56),rgb(129, 120, 120));
+    color:white;
+}
+.inner1 h1{
+    font-size:30px;
+    color:white;
+}
+.Sign-out{
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color:rgb(253, 253, 255);
+    background-color: rgb(226, 26, 26);
+    border:1px solid rgb(250, 241, 241);
+}
+.Sign-out:hover{
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(235, 61, 61);
+    border:1px solid black;
+}
+
+.title1{
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+   
+}
+/*.......facebook....
+................*/
+#facebook{
+    background-color: rgb(52, 52, 243);
+    color:white;
+    border:none;
+    text-decoration: bold;
+    font-size: 15px;
+    padding:8px 20px 8px 20px;
+}
+#facebook:hover{
+    color:rgb(52, 52, 243);
+    background-color: white;
+}
+.status{
+    z-index: 2;
+    display: none;
+}
+
+.card3{
+    display:grid;
+    background:linear-gradient(rgb(38, 38, 243) , rgb(245, 19, 19));
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+    grid-template-columns: max-content 400px;
+    grid-template-rows: max-content 500px;
+    grid-template-columns: repeat(4, fr);
+    gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+      ". a a ."
+      ". a a .";
+    align-content: center;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 2; 
+}
+
+.inner2{
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inner2 h1{
+    font-size:30px;
+    color:white;
+    border-radius: 5px;
+}
+#image2{
+    image-resolution: 500px;
+    width: 60px;
+    height: 60px;
+   
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 2px solid white;
+}
+#email2{
+  text-align: center;
+  font-size: 35px;
+  background:linear-gradient(to right,rgb(25, 26, 27),rgb(126, 112, 112));
+  color:white;
+}
+#name2{
+    font-size:35px;
+    background:linear-gradient(to right,rgb(25, 26, 27),rgb(126, 112, 112));
+    color:white;
+}
+#logout{
+    color:rgb(12, 34, 97);
+    background-color: white;
+    border:none;
+    font-weight: bold;
+    border-radius:5px;
+    font-size:20px;
+    padding:10px 20px 10px 20px;
+    margin-top: 60px;
+}
+#logout:hover{
+    color:white;
+    background-color: rgb(63, 114, 255);
+    font-weight: bold;
+}
